@@ -1,6 +1,6 @@
 {
   "name": "rust",
-  "image": "rust:1.74.1-bookworm",
+  "dockerFile": "Dockerfile",
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
@@ -10,8 +10,14 @@
       "extensions": [
         "rust-lang.rust-analyzer",
         "ms-azuretools.vscode-docker",
-        "vadimcn.vscode-lldb"
+        "vadimcn.vscode-lldb",
+        "serayuzgur.crates"
       ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
     }
   }
 }
