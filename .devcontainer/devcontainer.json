@@ -1,0 +1,17 @@
+{
+  "name": "rust",
+  "image": "rust:1.74.1-bookworm",
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      "settings": {
+        "rust-analyzer.check.command": "clippy"
+      },
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "ms-azuretools.vscode-docker",
+        "vadimcn.vscode-lldb"
+      ]
+    }
+  }
+}
